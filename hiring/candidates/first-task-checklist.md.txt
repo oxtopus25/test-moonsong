@@ -1,0 +1,8 @@
+# MongoDB Setup Checklist
+
+- Add MONGO_URI environment variable
+- Ensure server reads DB connection from env
+- Call DB connection during server startup
+- Confirm server fails clearly if MongoDB missing
+- Verify authentication still works
+- Test server restart with database

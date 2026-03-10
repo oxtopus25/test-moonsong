@@ -1,0 +1,14 @@
+# Persistence Plan
+
+Goal: Replace the current in-memory user storage with MongoDB persistent storage.
+
+## Task Plan
+
+| Task | Owner | Description | Dependencies |
+|------|------|-------------|--------------|
+| Setup MongoDB connection | Backend | Configure MongoDB connection in server startup | None |
+| Create User model | Backend | Define MongoDB schema for users | MongoDB connection |
+| Update authentication logic | Backend | Replace in-memory users with database queries | User model |
+| Validate JWT flow | Backend | Ensure authentication still works | Auth update |
+| Test persistence | QA | Verify users remain after server restart | Auth update |
+| Deployment configuration | DevOps | Ensure MongoDB environment variables exist | MongoDB setup |
